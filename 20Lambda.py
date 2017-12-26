@@ -12,9 +12,13 @@ print("After Mapping {}".format(ll))
 print("Original List :{}".format(numbers))
 
 
+def test():
+    print("From lambda")
+
 def invoke(iterable, func):
     for item in iterable:
         print(func(item), end=" ")
+
 
 print()
 invoke([1, 2, 3], lambda x: x**2)
